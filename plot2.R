@@ -12,13 +12,13 @@
 
 # We will only be using data from the dates 2007-02-01 and 2007-02-02.
 
-# ordinarily this function would be in a separate file, sourced in and not
-# duplicated at the top of every file but I include it so that every file is
-# self contained for the purpose of this exercise
-
 library(lubridate)
 library(dplyr)
 library(data.table)
+
+# ordinarily this function would be in a separate file, sourced in and not
+# duplicated at the top of every file but I include it so that every file is
+# self contained for the purpose of this exercise
 
 readFile <- function() {
   file <- "household_power_consumption.txt"
